@@ -1,0 +1,75 @@
+public class TestDemo {
+
+    public static void main5(String[] args) {
+        MyQueue myQueue = new MyQueue();
+        myQueue.offer(1);
+        myQueue.offer(2);
+        myQueue.offer(3);
+        myQueue.offer(4);
+        System.out.println(myQueue.peek());//1
+        System.out.println(myQueue.poll());//1
+        System.out.println(myQueue.poll());//2
+        System.out.println(myQueue.poll());//3
+        System.out.println(myQueue.poll());//4
+    }
+
+    public static void main(String[] args) {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.offer(1);
+        linkedList.offer(2);
+        linkedList.offer(3);
+        linkedList.offer(4);
+        System.out.println(linkedList.poll());//1
+        System.out.println(linkedList.peek());//2
+        System.out.println(linkedList.getFirst());//2
+    }
+
+    public static void main3(String[] args) {
+        MyStack myStack = new MyStack();
+        myStack.push(1);
+        myStack.push(2);
+        myStack.push(3);
+        myStack.push(4);
+        System.out.println(myStack.peek());//4
+        System.out.println(myStack.pop());//4
+        System.out.println(myStack.pop());//3
+        System.out.println(myStack.pop());//2
+        System.out.println(myStack.pop());//1
+        System.out.println(myStack.pop());//
+        System.out.println(myStack.empty());
+    }
+
+    public static void main2(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        //压栈
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        //只是获取栈顶元素是几 但是不删除
+        int ret = stack.peek();
+        System.out.println(ret);
+
+        System.out.println(stack);
+
+        //删除栈顶的元素，同时把删除的这个值记录下来  出栈
+        Integer val = stack.pop();
+        System.out.println(val);
+
+        System.out.println(stack);
+
+        System.out.println(stack.empty());
+        System.out.println(stack.isEmpty());
+
+
+
+    }
+
+    public static void main1(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        List<Integer> list2 = new LinkedList<>();//双向链表
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+    }
+}
